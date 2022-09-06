@@ -1,0 +1,93 @@
+public class Claudete
+{
+	public static void main(String args[])
+	{
+		double soma;
+		double menos;
+		double mult;
+		double divis�o;
+		double num1, num2, resultado;
+		String escolha = "";
+		
+		Scanner scanner= new Scanner(System.in);
+		
+		System.out.println("Digite o primeiro n�mero:");
+		num1 = scanner.nextDouble();
+		System.out.println();
+		
+		System.out.println("Digite o segundo n�mero:");
+		num2 = scanner.nextDouble();
+		System.out.println();
+		
+		System.out.println("Digite qual opera��o desejada:" +
+			"\nAdi��o(a)"+ 
+			"\nSubtra��o(s)"+
+			"\nMultiplica��o(m)"+
+			"\nDivis�o(d)");
+		
+		escolha = scanner.next();
+		
+		if(escolha.equalsIgnoreCase("a"))
+		{
+			System.out.println("O resultado da soma dos n�meros � de: " + (num1+num2));
+		}
+		else if{
+			System.out.println("O resultado da subtra��o dos n�meros � de: " + (num1-num2));
+		}
+		else if
+		{
+			System.out.println("O resultado da multiplica��o dos n�meros � de: " + (num1*num2));
+		}
+		else
+		{
+			System.out.println("O resultado da divis�o dos n�meros � de: " + (num1/num2));
+		}
+		
+		System.out.println();
+		
+		System.out.println("\tDeseja realizar outra opera��o S/N?");
+		escolha = scanner.next();
+		
+		while(escolha.equalsIgnoreCase("s"))
+		{
+			System.out.println("Digite o primeiro n�mero:");
+			num1 = scanner.nextDouble();
+			System.out.println();
+			
+			System.out.println("Digite o segundo n�mero:");
+			num2 = scanner.nextDouble();
+			System.out.println();
+			
+			System.out.println("Digite qual opera��o desejada:" +
+				"\nAdi��o(a)"+ 
+				"\nSubtra��o(s)"+
+				"\nMultiplica��o(m)"+
+				"\nDivis�o(d)");
+			
+			escolha = scanner.next();
+			
+			if(escolha.equalsIgnoreCase("a"))
+			{
+				System.out.println("O resultado da soma dos n�meros � de: " + (num1+num2));
+			}
+			else if
+			{
+				System.out.println("O resultado da subtra��o dos n�meros � de: " + (num1-num2));
+			}
+			else if
+			{
+				System.out.println("O resultado da multiplica��o dos n�meros � de: " + (num1*num2));
+			}
+			else
+			{
+				System.out.println("O resultado da divis�o dos n�meros � de: " + (num1/num2));
+			}
+			
+			System.out.println();
+			
+			System.out.println("\tDeseja realizar outra opera��o S/N?");
+			escolha = scanner.next();
+		}
+		
+	}
+}
